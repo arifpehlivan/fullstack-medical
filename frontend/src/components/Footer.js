@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
     return (
-            <div className='footer'>
+            <footer>
                 <div className="hour">
                     <h2>Opening Hours</h2>
                     <ul>
@@ -31,7 +31,7 @@ function Footer() {
                     <br />
                     Design: 
                 </div>
-            </div>
+            </footer>
     )
 }
 
