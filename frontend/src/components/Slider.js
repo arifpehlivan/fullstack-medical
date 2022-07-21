@@ -46,8 +46,12 @@ export default function Slider() {
                 <div className="sliderText">
                     <h1>Better <span>days</span> </h1> 
                     <h3>Medic Care is a Bootstrap 5 Template provided by TemplateMo website.Credits go to FreePik and RawPixel for images used in this template.</h3>
-                    <button>Learn More</button>
-                    <span><FaMobile size="30px"/>0123456789</span>
+                    <div>
+                        <button>Learn More</button>
+                        <FaMobile size="25px" color="#717275" />
+                    <span>0123456789</span>
+                    </div>
+                    
                     </div>
             </Swiper>
         </>
