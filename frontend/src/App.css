@@ -345,6 +345,7 @@ main {
     width: 100%;
     margin-top: 100px;
     position: relative;
+    
 }
 
 .timeline h1 {
@@ -353,11 +354,26 @@ main {
     justify-content: center;
 }
 
+time {
+    display: flex;
+    width: 100%;
+    /* top: 0; */
+    /* margin-left: 800px; 
+    margin-bottom: 300px; */
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
 .card {
     margin-top: 10px;
     height: 200px;
     width: 600px;
-    
+    flex-direction: column;
     
 }
 
@@ -401,7 +417,7 @@ main {
     
 } */
 
-.card:nth-child(even) h2::after {
+.card-container:nth-child(even) h2::after {
     
     content: '';
     position:absolute;
@@ -413,7 +429,7 @@ main {
 
 }
 
-.card:nth-child(odd) h2::before {
+.card-container:nth-child(odd) h2::before {
     content: '';
     position:absolute;
     right: 570px;
@@ -423,9 +439,7 @@ main {
     border-color:  transparent black transparent  transparent  ;
 }
 
-.card:nth-child(odd) {
-    
-    
+.card-container:nth-child(odd) {
     margin-left: 800px;
 }
 
@@ -500,18 +514,20 @@ main {
     text-align: left;
 }
 
-.content-icon {
-    
+.content-icon {   
     position: absolute;
-    
-    
-    margin-top: 50px;
-    
-    margin: auto auto;
     top: 65px;
-    left: 50%;
-    
+    left: 50%;    
 }
+
+/* .content-icon:nth-child(even) {   
+    position: absolute;
+    top: 165px;
+    left: 50%;    
+} */
+
+
+
 
 .content-icon div {
     width: 60px;
@@ -524,3 +540,4 @@ main {
     align-items: center;
     justify-content: center;
 }
+
