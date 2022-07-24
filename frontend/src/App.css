@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
     /* background-color: red; */
 }
 
@@ -261,15 +262,23 @@ footer div {
     margin-left: 20px;
 }
 
+input[type=date] {
+    width: 220px;
+}
+
+
+
 .form textarea {
     text-align: left;
     padding: 10px;
     border: none;
-    width: 100%;
+    width: 500px;
+    height: 100px;
     color: #6c757d;
     font-size: 18px;
     margin-top: 10px;
     margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .form button {

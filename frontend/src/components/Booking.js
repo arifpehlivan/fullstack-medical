@@ -46,8 +46,8 @@ function Booking() {
 
                 <div>
                     <input type="text" placeholder='Phone: 1234567890' onChange={(e) => setPhone(e.target.value)}/>
-                <input type="text" placeholder='gg.aa.yyy' onChange={(e) => setDate(e.target.value)}/>
-                <FaCalendar size="18px"/>
+                <input type="date" placeholder='gg.aa.yyy' onChange={(e) => setDate(e.target.value)}/>
+                {/* <FaCalendar size="18px"/> */}
                 </div>
                 
                 <textarea placeholder='Additional message' onChange={(e) => setMessage(e.target.value)}/>
