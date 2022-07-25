@@ -7,7 +7,7 @@ app.use(cors());
 
 app.use(express.json())
 
-var name, email, phone, date, message;
+var name, email, phone, date, hours, message;
 
 app.post("/", (req, res) => {
     res.json([
@@ -16,6 +16,7 @@ app.post("/", (req, res) => {
             email: req.body.email,
             phone: req.body.phone,
             date: req.body.date,
+            hours: req.body.hours,
             message: req.body.message,
         },
     ]);
@@ -23,6 +24,7 @@ app.post("/", (req, res) => {
     email = req.body.email;
     phone = req.body.phone;
     date = req.body.date;
+    hours = req.body.hours;
     message = req.body.message;
 })
 
@@ -30,7 +32,7 @@ app.post("/", (req, res) => {
 
 app.get("/booking", (req, res) => {
     const data = {
-        name, email, phone, date, message
+        name, email, phone, date, hours, message
     };
     res.json(data);
 })

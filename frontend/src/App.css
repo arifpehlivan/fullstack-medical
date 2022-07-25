@@ -239,6 +239,12 @@ footer div {
     justify-content: center;
 }
 
+select {
+    border: none;
+    width: 100px;
+    border-bottom: 1px solid black;
+}
+
 .form div {
     display: flex;
     padding: 20px;
